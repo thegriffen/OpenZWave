@@ -120,10 +120,32 @@ Please Note: If this doesn't work, you can check to see if your switch is within
   <!-- Central Scene Reports -->
   <CommandClass id="91">
     <Instance index="1" />
-      <Value type="int" genre="system" instance="1" index="0" label="Scene Count" units="" read_only="true" write_only="false" verify_changes="false" min="-2147483648" max="2147483647" value="2" />
-      <Value type="int" genre="user" instance="1" index="2" label="Top Button Scene" units="" read_only="false" write_only="false" verify_changes="false" min="-2147483648" max="2147483647" value="0" />
-      <Value type="int" genre="user" instance="1" index="1" label="Bottom Button Scene" units="" read_only="false" write_only="false" verify_changes="false" min="-2147483648" max="2147483647" value="0" />
-      <Value type="int" genre="user" instance="1" index="3" label="Config Button Scene" units="" read_only="false" write_only="false" verify_changes="false" min="-2147483648" max="2147483647" value="0" />
+    <Value type="int" genre="system" instance="1" index="256" label="Scene Count" units="" read_only="true" write_only="false" verify_changes="false" min="-2147483648" max="2147483647" value="3" />
+    <Value type="list" size="8" genre="user" instance="1" index="2" label="Top Button Scene" units="" read_only="false" write_only="false" verify_changes="false" min="0" max="7" value="0">
+      <Item value="0" label="Inactive"/>
+      <Item value="1" label="Pressed 1 Time"/>
+      <Item value="2" label="Released"/>
+      <Item value="3" label="Held Down"/>
+      <Item value="4" label="Pressed 2 Times"/>
+      <Item value="5" label="Pressed 3 Times"/>
+      <Item value="6" label="Pressed 4 Times"/>
+      <Item value="7" label="Pressed 5 Times"/>
+    </Value>
+    <Value type="list" size="8" genre="user" instance="1" index="1" label="Bottom Button Scene" units="" read_only="false" write_only="false" verify_changes="false" min="0" max="7" value="0">
+      <Item value="0" label="Inactive"/>
+      <Item value="1" label="Pressed 1 Time"/>
+      <Item value="2" label="Released"/>
+      <Item value="3" label="Held Down"/>
+      <Item value="4" label="Pressed 2 Times"/>
+      <Item value="5" label="Pressed 3 Times"/>
+      <Item value="6" label="Pressed 4 Times"/>
+      <Item value="7" label="Pressed 5 Times"/>
+    </Value>
+    <Value type="list" size="3" genre="user" instance="1" index="3" label="Config Button Scene" units="" read_only="false" write_only="false" verify_changes="false" min="0" max="2" value="0">
+      <Item value="0" label="Inactive"/>
+      <Item value="1" label="Pressed 1 Time"/>
+      <Item value="2" label="Released"/>
+    </Value>
   </CommandClass>
 </Product>
 
